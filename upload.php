@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
                 $filenamenew="test".".".$fileactualext;
                 $fildestination='env/Dependency parser/templates/prodigy-custom-model/uploads/'.$filenamenew;
                 move_uploaded_file($filetmpname,$fildestination);
-                header("Location: index.html?success=true");
+                header("Location: index.php?success=true");
                 
             }
             else{
